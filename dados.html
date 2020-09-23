@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cabecalho">
+        <div class="posicao">
+            <img class="logo" src="imagens-desafio\logo.png">
+            <div class="pesquisa">
+                <input id='pesquisa' placeholder="Pesquise Filmes...">
+                <img src="imagens-desafio\ic-lupa.png">            
+            </div>
+            <div class='favoritos'><img src="imagens-desafio\ic-favoritos.png"> <span>Favoritos</span></div>
+            <div class='promocoes'><img src="imagens-desafio\ic-promocoes.png"> <span>Promoções</span></div>
+            <div class="usuario">
+                <span>Bem-vindo(a) <span class="nome-usuario"></span></span>
+                <img src="imagens-desafio\fotinha.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="corpo"> 
+        <img class= "dados-imagem-fundo" src="imagens-desafio\fundo-dados.png">
+        <div class="centro">
+            <div class="conteudo">
+                <div class="infos-iniciais">
+                    <h2>Informações iniciais</h2>
+                    <div class="inputs">
+                        <label>
+                            <p>Insira seu nome completo</p>
+                            <input type="text" id="nome" placeholder="Ex. Fulano Fulaninho de Tal">
+                        </label>
+                        <label>
+                            <p>Insira seu e-mail</p>
+                            <input type="email" id= "email" placeholder="Ex. fulano@mail.com">
+                        </label>
+                        <label>
+                            <p>Insira seu telefone</p>
+                            <input type="tel" id= "telefone" placeholder="+55 (71) 90000-0000">
+                        </label>
+                    </div>
+                </div>
+                <div class="infos-endereco">
+                    <h2>Informações de endereço</h2>
+                    <div class="inputs">
+                        <label>
+                            <p>CEP</p>
+                            <input inputmode="numeric" id="cep" placeholder="Ex. 00000-000">
+                        </label>
+                        <label>
+                            <p>País</p>
+                            <input type="text" id= "pais" placeholder="Ex. Brasil">
+                        </label>
+                        <label>
+                            <p>Cidade</p>
+                            <input type="text" id= "cidade" placeholder="Ex. Salvador">
+                        </label>
+                        <label>
+                            <p>Bairro</p>
+                            <input type="text" id= "bairro" placeholder="Ex. Graça">
+                        </label>
+                        <label>
+                            <p>Número</p>
+                            <input inputmode="numeric" id="numero" placeholder="Ex. 40">
+                        </label>
+                        <label>
+                            <p>Estado</p>
+                            <select id="estado">
+                                <option value=" " id="estado"></option>
+                                <option value="ac" id="estado">AC</option>
+                                <option value="al" id="estado">AL</option>
+                                <option value="ap" id="estado">AP</option>
+                                <option value="am" id="estado">AM</option>
+                                <option value="ba" id="estado">BA</option>
+                                <option value="ce" id="estado">CE</option>
+                                <option value="df" id="estado">DF</option>
+                                <option value="es" id="estado">ES</option>
+                                <option value="go" id="estado">GO</option>
+                                <option value="ma" id="estado">MA</option>
+                                <option value="mt" id="estado">MT</option>
+                                <option value="ms" id="estado">MS</option>
+                                <option value="mg" id="estado">MG</option>
+                                <option value="pa" id="estado">PA</option>
+                                <option value="pb" id="estado">PB</option>
+                                <option value="pr" id="estado">PR</option>
+                                <option value="pe" id="estado">PE</option>
+                                <option value="pi" id="estado">PI</option>
+                                <option value="rj" id="estado">RJ</option>
+                                <option value="rn" id="estado">RN</option>
+                                <option value="rs" id="estado">RS</option>
+                                <option value="ro" id="estado">RO</option>
+                                <option value="rr" id="estado">RR</option>
+                                <option value="sc" id="estado">SC</option>
+                                <option value="sp" id="estado">SP</option>
+                                <option value="se" id="estado">SE</option>
+                                <option value="to" id="estado">TO</option>
+                            </select>
+                        </label>       
+                    </div>
+                </div>
+                <div class="infos-pagamento">
+                    <h2>Informações de pagamento</h2>
+                    <div class="inputs">
+                        <label>
+                            <p>Número do cartão</p>
+                            <input inputmode="numeric" id="numeroCartao" placeholder="Ex. 00000 00000 0000">
+                        </label>
+                        <label>
+                            <p>Nome do cartão</p>
+                            <input type="text" id="nomeCartao" placeholder="Ex. Meu cartão 1">
+                        </label>
+                        <label>
+                            <p>Data de expiração</p>
+                            <input inputmode="numeric" id="dataExpiracao" placeholder="MM/YYYY">
+                        </label>
+                        <label>
+                            <p>CCV</p>
+                            <input inputmode="numeric" id="ccv" placeholder="Ex. 000">
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sacola">
+                <div class="conteudo-sacola">
+                    <div class="cabecalho-sacola-dados">
+                     <div class="titulo-sacola">
+                         <span>Resumo do pedido</span>
+                     </div>
+                    </div>
+                    <div class="corpo-sacola-dados">
+                    </div>
+                    <div class="cupom-sacola">
+                        <div>Insira seu cupom</div>
+                        <div class="cupom-desconto">
+                            <input id="cupom-desconto" placeholder="Cupom de desconto">
+                            <img src="imagens-desafio\ticket-desconto.png">
+                        </div>
+                        <button id="finalizar-compra">
+                            <span>Comprar agora</span>
+                            <span>R$ <span class="precoTotal"></span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dados.js"></script>
+</body>
+</html>

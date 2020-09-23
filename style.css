@@ -1,0 +1,436 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: 	#1C1C1C;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    color: white;
+}
+
+body > * {
+    display: flex;
+    justify-content: center;
+}
+
+body > * > .posicao{
+    flex: 0 1 1240px;
+}
+
+body > * > .centro{
+    flex: 0 1 1240px;
+}
+
+.cabecalho .posicao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-right: 5vw;
+}
+
+.cabecalho{
+    min-width: 100vw;
+    min-height: 104px;
+    background-color: #0F1C26;
+}
+
+.cabecalho .pesquisa, .cabecalho .usuario{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.favoritos img, .promocoes img{
+    padding-right: 0.5em;
+}
+
+.cabecalho .pesquisa img{
+    position: absolute;
+    left: 420px;
+}
+
+.cabecalho #pesquisa{
+    min-height: 56px;
+    min-width: 456px;
+    background-color: #171B1E;
+    color: white;
+}
+
+.cabecalho .usuario{
+    align-content: center;
+
+}
+
+.cabecalho .usuario img{
+    margin-left: 1em;
+}
+
+.corpo .posicao{
+    display: flex;
+    margin: 1em 1.5rem 0 0;
+}
+
+.corpo .posicao .conteudo{
+    min-width: 937px;
+}
+
+.corpo .centro{
+    display: flex;
+    justify-content: center;
+}
+
+.corpo .centro > div{
+    margin-top: 3rem;
+}
+
+.corpo .posicao .sacola, .corpo .centro .sacola{
+    margin-left: 4em;
+    margin-right: 2em;
+}
+
+.cupom{
+    color: #0F0915;
+    position: relative;
+}
+
+.cupom .conteudo-cupom .texto-cupom, .conteudo .conteudo-cupom .time-cupom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.cupom .conteudo-cupom .texto-cupom div:first-child{
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.cupom .conteudo-cupom .texto-cupom div:last-child{
+    position: absolute;
+    left: 1rem;
+    bottom: 0.5rem;
+}
+
+.cupom .conteudo-cupom .texto-cupom span{
+    position: absolute;
+    left: 3rem;
+}
+
+.conteudo .conteudo-cupom .time-cupom{
+    margin-left: 3em;
+}
+
+.cupom .conteudo-cupom .time-cupom div:first-child{
+    font-size: 1.5rem;
+    position: absolute;
+    left: 18rem;
+    top: 1.3rem;
+}
+
+.cupom .conteudo-cupom .time-cupom div:last-child{
+    position: absolute;
+    left: 18rem;
+    bottom: 1rem;
+}
+
+.cupom .conteudo-cupom .time-cupom span{
+    position: absolute;
+    left: 3rem;
+    bottom: 0.5rem;
+}
+
+.conteudo .cupom{
+    font-family: 'Quantico', sans-serif;
+}
+
+.cupom .retangulo-cupom {
+    position: absolute;
+    left: 0;
+}
+
+.cupom .dinheiro-cupom{
+    position: absolute;
+    right: 0;
+    bottom: -0.5rem;
+} 
+
+ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+li{
+    position: relative;
+    margin: 1rem 0;
+}
+
+li img{
+    max-width: 168px;
+    max-height: 301px;
+}
+
+li .info-filme{
+    min-width: 160px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 4rem;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+li .info-filme .nota-filme{
+    color: #FBCD6E;
+}
+
+li .conteiner-preco-filme{
+    min-width: 152px;
+    min-height: 26px;
+    background-color: #A785ED;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.conteudo .filmes .categorias{
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo .filmes button{
+    font-family: 'Open Sans', sans-serif;
+    background-color:rgba(225, 131, 200, 0.2);
+    color: #E183C8;
+    border-color: #E183C8;
+    min-width: 168px;
+    min-height: 38px;
+}
+
+.conteudo .filmes button:hover{
+    background-color: transparent;
+    color: #E183C8;
+    border-color: #E183C8;
+}
+
+.conteudo .filmes button:focus{
+    background-color: transparent;
+    color: #A785ED;
+    border-color: #A785ED;
+}
+
+.conteudo-sacola{
+    min-width: 312px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 1rem;
+}
+
+.conteudo-sacola .cabecalho-sacola{
+    min-height: 72px;
+    background-color:  #A785ED;
+}
+
+.conteudo-sacola .cabecalho-sacola-dados{
+    min-height: 72px;
+}
+
+.conteudo-sacola .cabecalho-sacola .titulo-sacola, .conteudo-sacola .cabecalho-sacola-dados .titulo-sacola{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 72px;
+}
+
+.conteudo-sacola .cabecalho-sacola .titulo-sacola span, .conteudo-sacola .cabecalho-sacola-dados .titulo-sacola span{
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.conteudo-sacola .corpo-sacola, .conteudo-sacola .corpo-sacola-dados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    min-width: 360px;
+    margin-top: 2rem;
+}
+
+.conteudo-sacola .corpo-sacola .sacola-vazia{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.conteudo-sacola .corpo-sacola .elemento-sacola, .conteudo-sacola .corpo-sacola-dados .elemento-sacola{
+    display: flex;
+    justify-content: space-between;
+    min-width: 280px;
+    margin-bottom: 1rem;
+}
+.conteudo-sacola .corpo-sacola .elemento-sacola .poster-filme-sacola, .conteudo-sacola .corpo-sacola-dados .elemento-sacola .poster-filme-sacola{
+    max-width: 43px;
+    max-height: 67px;
+}
+
+.conteudo-sacola .corpo-sacola .elemento-sacola .info-filme-sacola, .conteudo-sacola .corpo-sacola-dados .elemento-sacola .info-filme-sacola{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.conteudo-sacola .corpo-sacola .elemento-sacola .preco-filme-sacola, .conteudo-sacola .corpo-sacola-dados .elemento-sacola .preco-filme-sacola{
+    margin-top: 1rem;
+}
+
+.conteudo-sacola .corpo-sacola .elemento-sacola .qtd-filme-sacola, .conteudo-sacola .corpo-sacola-dados .elemento-sacola .qtd-filme-sacola{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.conteudo-sacola .corpo-sacola .elemento-sacola .qtd-filme-sacola .numero-filme-sacola, .conteudo-sacola .corpo-sacola-dados .elemento-sacola .qtd-filme-sacola .numero-filme-sacola{
+    margin: 0 0.5rem;
+}
+
+.conteudo-sacola .cupom-sacola{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.conteudo-sacola .cupom-sacola div{
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    
+}
+
+.conteudo-sacola .cupom-sacola #cupom-desconto{
+    min-width: 280px;
+    min-height: 40px;
+    background-color: #171B1E;
+    position: relative;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.conteudo-sacola .cupom-sacola .cupom-desconto img{
+    position: absolute;
+    right: 3.5rem;
+    top: 2.8rem;
+}
+
+.cupom-sacola #finalizar-compra, .cupom-sacola #conferir-dados{
+    min-width: 280px;
+    min-height: 56px;
+    background-color: #E25EBF;
+    border-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.cupom-sacola #conferir-dados{
+    display: none;
+}
+
+.corpo{
+    display: flex;
+    align-items: center;
+}
+
+.corpo .infos-iniciais, .corpo .infos-pagamento{
+   background-color:  #171B1E;
+   min-width: 744px;
+   min-height: 302px;
+   padding: 30px;  
+}
+
+.corpo .infos-endereco{
+    background-color:  #171B1E;
+    min-width: 744px;
+    min-height: 400px;
+    padding: 30px;  
+    margin: 1rem 0;
+ }
+
+ .corpo .infos-pagamento{
+     margin-bottom: 4rem;
+ }
+
+ .corpo label{
+    font-size: 0.8rem;
+ }
+
+.corpo .infos-iniciais .inputs, .corpo .infos-endereco .inputs, .corpo .infos-pagamento .inputs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.corpo .infos-iniciais .inputs input, .corpo .infos-endereco .inputs input, .corpo .infos-endereco .inputs select, .corpo .infos-pagamento .inputs input{
+    min-width: 328px;
+    min-height: 40px;
+    background-color: #0B1217;
+    border: none;
+    color: white;
+    border: 1px solid transparent;
+}
+
+.corpo .infos-iniciais .inputs input:hover, .corpo .infos-endereco .inputs input:hover, .corpo .infos-pagamento .inputs input:hover{
+    border-color: #8C8C8C;
+}
+
+.corpo .infos-iniciais .inputs input:focus, .corpo .infos-endereco .inputs input:focus, .corpo .infos-pagamento .inputs input:focus{
+    border-color: #FDFDFD;
+}
+
+
+
+.centro .conteudo .conteiner-compra{
+    background-color:  #0B1217;
+    min-width: 784px;
+    min-height: 443px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+
+.centro .conteudo .conteiner-compra button{
+    background-color: #E25EBF;
+    min-width: 456px;
+    min-height: 56px;
+    color: white;
+    margin-top: 4rem;
+}
+
+.musico{
+    position: absolute;
+    right: -16rem;
+}

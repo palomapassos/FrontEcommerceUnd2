@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Open+Sans&family=Quantico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cabecalho">
+        <div class="posicao">
+            <img class="logo" src="imagens-desafio\logo.png">
+            <div class="pesquisa">
+                <input id='pesquisa' placeholder="Pesquise Filmes...">
+                <img src="imagens-desafio\ic-lupa.png">            
+            </div>
+            <div class='favoritos'><img src="imagens-desafio\ic-favoritos.png"> <span>Favoritos</span></div>
+            <div class='promocoes'><img src="imagens-desafio\ic-promocoes.png"> <span>Promoções</span></div>
+            <div class="usuario">
+                <span>Bem-vindo(a) <span class="nome-usuario"></span></span>
+                <img src="imagens-desafio\fotinha.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="corpo"> 
+        <div class="posicao">
+            <div class="conteudo">
+                <div class="cupom">
+                    <img class="retangulo-cupom-rosa" src="imagens-desafio\retangulo2-cupom.png">
+                    <img class="retangulo-cupom" src="imagens-desafio\retangulo-cupom.png">
+                    <img class="dinheiro-cupom" src="imagens-desafio\dinheiro-cupom.png">
+                    <div class="conteudo-cupom">
+                        <div class="texto-cupom">
+                            <div>APROVEITE AGORA</div>   
+                            <div>
+                                <img src="imagens-desafio\ic-cupom.png" > 
+                                <span>Cupom: HTMLNAOELINGUAGEM</span>
+                            </div>
+                        </div>
+                        <div class="time-cupom">
+                            <div>FINALIZA EM:</div>
+                            <div>
+                                <img src="imagens-desafio\ic-time-cupom.png">
+                                <span class="time">00:05:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="top-filmes">
+                    <h2>Top Filmes</h2>
+                    <ul class="lista-top-filmes"></ul>
+                </div>
+
+                <div class="filmes">
+                    <h2>Filmes</h2>
+                    <div class="categorias">
+                        <button id="todos">Todas</button>
+                        <button id="acao">Ação</button>
+                        <button id="romance">Romance</button>
+                        <button id="sci-fi">Ficção Científica</button>
+                        <button id="terror">Terror</button>
+                    </div>
+                    <ul class="lista-filmes"></ul>
+                </div>
+
+            </div>
+            <div class="sacola">
+                <div class="conteudo-sacola">
+                    <div class="cabecalho-sacola">
+                     <div class="titulo-sacola">
+                         <img src="imagens-desafio\bolsa-sacola.png">
+                         <span>Sacola</span>
+                     </div>
+
+                    </div>
+                    <div class="corpo-sacola">
+                        <div class="sacola-vazia">Sua sacola está vazia</div>
+                        <div>Adicione filmes agora</div>
+                        <img src="imagens-desafio\sacola-vazia.png">
+                    </div>
+                    <div class="cupom-sacola">
+                        <div>Insira seu cupom</div>
+                        <div class="cupom-desconto">
+                            <input id="cupom-desconto" placeholder="Cupom de desconto">
+                            <img src="imagens-desafio\ticket-desconto.png">
+                        </div>
+                        <button id="conferir-dados">
+                            <span>Conferir dados</span>
+                            <span>R$ <span class="precoTotal"></span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
